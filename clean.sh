@@ -20,13 +20,16 @@ true \
     && rm -f ltmain.sh \
     && rm -f missing \
     && rm -f stamp-h1 \
+    && rm -f *~ \
     && rm -f -r autom4te.cache \
     && rm -f -r libltdl \
     && rm -f -r m4 \
     && rm -f -r bin/.libs \
+    && rm -f -r bin/.deps \
     && rm -f bin/Makefile \
     && rm -f bin/Makefile.in \
     && rm -f bin/*.o \
+    && rm -f bin/*~ \
     && rm -f bin/libmbus.1 \
     && rm -f bin/mbus-serial-request-data \
     && rm -f bin/mbus-serial-request-data-multi-reply \
@@ -39,12 +42,21 @@ true \
     && rm -f bin/mbus-tcp-scan \
     && rm -f bin/mbus-tcp-scan-secondary \
     && rm -f bin/mbus-tcp-select-secondary \
-    && rm -f -r bin/.libs \
+    && rm -f -r mbus/.libs \
+    && rm -f -r mbus/.deps \
     && rm -f mbus/Makefile \
     && rm -f mbus/Makefile.in \
     && rm -f mbus/*.o \
     && rm -f mbus/*.lo \
     && rm -f mbus/*.la \
+    && rm -f mbus/*~ \
+    && rm -f -r test/.deps \
+    && rm -f test/Makefile \
+    && rm -f test/Makefile.in \
+    && rm -f test/*.o \
+    && rm -f test/*.lo \
+    && rm -f test/*.la \
+    && rm -f test/*~ \
     && rm -f -r debian/libmbus-dev \
     && rm -f -r debian/libmbus1 \
     && rm -f -r debian/tmp \
