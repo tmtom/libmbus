@@ -17,4 +17,4 @@ include_HEADERS = mbus.h mbus-protocol.h mbus-tcp.h mbus-serial.h mbus-protocol-
 
 lib_LTLIBRARIES	   = libmbus.la
 libmbus_la_SOURCES = mbus.c mbus-protocol.c mbus-tcp.c mbus-serial.c mbus-protocol-aux.c
-
+libmbus_la_LDFLAGS = -version-info $(LIBMBUS_LIBRARY_VERSION)
