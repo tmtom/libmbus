@@ -5,7 +5,7 @@ PACKAGE		= @PACKAGE@
 VERSION		= @VERSION@
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libmbus.pc
+pkgconfig_DATA = libmbus-@LIBMBUS_API_VERSION@.pc
 
 
 docdir = $(datadir)/doc/$(PACKAGE)-$(VERSION)
